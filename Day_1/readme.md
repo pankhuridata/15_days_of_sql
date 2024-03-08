@@ -11,6 +11,7 @@ CREATE TABLE challenge.movies (
 ````
 
 ## Fill the Table 
+````sql
 INSERT INTO `challenge`.`movies` (`ID`, `Title`, `Director`, `Year`, `Length_minutes`) VALUES ('1', 'Toy Story', 'John Lasseter', '1995', '81');
 INSERT INTO `challenge`.`movies` (`ID`, `Title`, `Director`, `Year`, `Length_minutes`) VALUES ('2', 'A Bug\'s Life', 'John Lasseter', '1998', '95');
 INSERT INTO `challenge`.`movies` (`ID`, `Title`, `Director`, `Year`, `Length_minutes`) VALUES ('3', 'Toy Story 2', 'John Lasseter', '1999', '93');
@@ -25,4 +26,6 @@ INSERT INTO `challenge`.`movies` (`ID`, `Title`, `Director`, `Year`, `Length_min
 INSERT INTO `challenge`.`movies` (`ID`, `Title`, `Director`, `Year`, `Length_minutes`) VALUES ('12', 'Cars 2', 'John Lasseter', '2011', '120');
 INSERT INTO `challenge`.`movies` (`ID`, `Title`, `Director`, `Year`, `Length_minutes`) VALUES ('13', 'Brave', 'Brenda Chapman', '2012', '102');
 INSERT INTO `challenge`.`movies` (`ID`, `Title`, `Director`, `Year`, `Length_minutes`) VALUES ('14', 'Monsters University', 'Dan Scanlon', '2013', '110');
+````
 
+# SELECT 
