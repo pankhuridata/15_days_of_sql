@@ -1,3 +1,4 @@
+# Code
 CREATE TABLE `challenge`.`movies` (
   `ID` INT NOT NULL,
   `Title` VARCHAR(60) NOT NULL,
