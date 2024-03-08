@@ -29,8 +29,7 @@ INSERT INTO `challenge`.`movies` (`ID`, `Title`, `Director`, `Year`, `Length_min
 ````
 
 ``` 
-| customer_id | total_sales  |
-|-------------|--------------|
-|      A      |      76      |
-|      B      |      74      |
-|      C      |      36      |
+| ID | Title | Director | Year |
+|----|-------|----------|------|
+
+
