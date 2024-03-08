@@ -30,4 +30,9 @@ There’s a challenge called the #30DaysOfSQL challenge, where engineers code wi
 );
   
 ## SELECT queries
-- 
+- The SELECT Statement in SQL is used to retrieve or fetch data from a database.
+- We can fetch either the entire table or according to some specified rules. The data returned is stored in a result table.
+- Syntax: SELECT column1,column2
+          FROM table_name 
+
+
