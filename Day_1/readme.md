@@ -23,3 +23,12 @@ INSERT INTO `challenge`.`movies` (`ID`, `Title`, `Director`, `Year`, `Length_min
 INSERT INTO `challenge`.`movies` (`ID`, `Title`, `Director`, `Year`, `Length_minutes`) VALUES ('12', 'Cars 2', 'John Lasseter', '2011', '120');
 INSERT INTO `challenge`.`movies` (`ID`, `Title`, `Director`, `Year`, `Length_minutes`) VALUES ('13', 'Brave', 'Brenda Chapman', '2012', '102');
 INSERT INTO `challenge`.`movies` (`ID`, `Title`, `Director`, `Year`, `Length_minutes`) VALUES ('14', 'Monsters University', 'Dan Scanlon', '2013', '110');
+
+SELECT 
+  sales.customer_id, 
+  SUM(menu.price) AS total_sales
+FROM dannys_diner.sales
+INNER JOIN dannys_diner.menu
+  ON sales.product_id = menu.product_id
+GROUP BY sales.customer_id
+ORDER BY sales.customer_id ASC; 
