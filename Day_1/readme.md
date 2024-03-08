@@ -28,4 +28,9 @@ INSERT INTO `challenge`.`movies` (`ID`, `Title`, `Director`, `Year`, `Length_min
 INSERT INTO `challenge`.`movies` (`ID`, `Title`, `Director`, `Year`, `Length_minutes`) VALUES ('14', 'Monsters University', 'Dan Scanlon', '2013', '110');
 ````
 
-# SELECT 
+``` 
+| customer_id | total_sales  |
+|-------------|--------------|
+|      A      |      76      |
+|      B      |      74      |
+|      C      |      36      |
