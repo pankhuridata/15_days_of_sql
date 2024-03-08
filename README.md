@@ -4,12 +4,12 @@ There’s a challenge called the #30DaysOfSQL challenge, where engineers code wi
 
 # Day 1
 ## What is SQL?
-Structured query language (SQL) is a programming language for storing and processing information in a relational database.
-A relational database stores information in tabular form, with rows and columns representing different data attributes and the various relationships between the data values. You can use SQL statements to store, update, remove, search, and retrieve information from the database. You can also use SQL to maintain and optimize database performance.
+- Structured query language (SQL) is a programming language for storing and processing information in a relational database.
+- A relational database stores information in tabular form, with rows and columns representing different data attributes and the various relationships between the data values. - You can use SQL statements to store, update, remove, search, and retrieve information from the database. You can also use SQL to maintain and optimize database performance.
 
 ## What is NoSQL?
-NoSQL refers to non-relational databases that don't use tables to store data. 
-Developers store information in different types of NoSQL databases, including graphs, documents, and key-values. NoSQL databases are popular for modern applications because they are horizontally scalable. 
-Horizontal scaling means increasing the processing power by adding more computers that run NoSQL software.
+- NoSQL refers to non-relational databases that don't use tables to store data. 
+- Developers store information in different types of NoSQL databases, including graphs, documents, and key-values. NoSQL databases are popular for modern applications because they are horizontally scalable. 
+- Horizontal scaling means increasing the processing power by adding more computers that run NoSQL software.
 
 ##
