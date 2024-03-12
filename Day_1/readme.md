@@ -28,16 +28,16 @@
 ## SELECT queries
 - The SELECT Statement in SQL is used to retrieve or fetch data from a database.
 - We can fetch either the entire table or according to some specified rules. The data returned is stored in a result table.
-- Syntax: SELECT column1,column2
+- Syntax: SELECT column1,column2 <br />
           FROM table_name 
 
 ### WHERE queries 
 - In order to filter certain results from being returned, we need to use a WHERE clause in the query. The clause is applied to each row of data by checking specific column values to determine whether it should be included in the results or not.
-- Syntax: SELECT column, another_column, …
-          FROM mytable
-          WHERE condition
-               AND/OR another_condition
-               AND/OR …;
+- Syntax: SELECT column, another_column, … <br />
+          FROM mytable <br />
+          WHERE condition <br />
+               AND/OR another_condition <br />
+               AND/OR …; <br />
   
 
 
