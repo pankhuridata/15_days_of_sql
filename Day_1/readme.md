@@ -38,6 +38,10 @@
           WHERE condition <br />
                AND/OR another_condition <br />
                AND/OR …; <br />
-  
+
+| Operator | Condition | SQL example |
+| --- | --- | --- |
+| =, !=, < <=, >, >= | Standard numerical operators | col_name != 4 |
+
 
 
