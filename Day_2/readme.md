@@ -32,3 +32,11 @@ WHERE condition(s) <br/>
 ORDER BY column ASC/DESC <br/>
 LIMIT num_limit OFFSET num_offset;
 
+## NULL Values 
+- It's always good to reduce the possibility of **NULL** values in databases because they require special attention when constructing queries, constraints (certain functions behave differently with null values) and when processing the results.
+- An alternative to NULL values in your database is to have data-type appropriate default values, like 0 for numerical data, empty strings for text data, etc. But if your database needs to store incomplete data, then NULL values can be appropriate if the default values will skew later analysis (for example, when taking averages of numerical data).
+- Syntax: SELECT column, another_column, … <br/>
+FROM mytable <br/>
+WHERE column IS/IS NOT NULL <br/>
+AND/OR another_condition <br/>
+AND/OR …;
