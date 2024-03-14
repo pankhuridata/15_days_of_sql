@@ -64,7 +64,11 @@ Where id like '48Z%'and membership_status='gold';
 <img width="356" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/1719a343-4f48-498c-8046-27e77822ae9d">
 
 ```sql
-
+Select *
+From get_fit_now_check_in
+Where check_in_date = '20180119' ;
+           
 ```
+<img width="281" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/e8e786e3-cead-42d4-96c3-30af34b5c8df">
 
  
