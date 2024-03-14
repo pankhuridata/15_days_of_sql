@@ -112,6 +112,12 @@ Where car_make='Tesla'and car_model='Model S'and gender='female' and hair_color 
 ```
 <img width="400" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/415eceb8-f61a-4b1b-ba43-9d065cd98019">
 
-
 ```sql
+SELECT *
+FROM person
+WHERE license_id = "202298" OR license_id = "291182" OR license_id = "918773";
+```
+<img width="377" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/fe293e6c-4f8a-4994-96f6-c1882219e2dd">
+
+
 
