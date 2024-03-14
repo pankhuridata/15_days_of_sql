@@ -80,8 +80,9 @@ Where license_id="183779";
 ```sql
 Select *
 From get_fit_now_check_in
-Where check_in_date = '20180119' ;           
+Where check_in_date = '20180109' and membership_id like '48Z%' ;                     
 ```
-<img width="281" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/e8e786e3-cead-42d4-96c3-30af34b5c8df">
+<img width="286" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/c73a252e-cba3-4fed-a733-5b995e9d9090">
+
 
  
