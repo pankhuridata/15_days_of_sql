@@ -72,6 +72,13 @@ Where plate_number like 'H42W%' ;
 
 ```sql
 Select *
+From person
+Where license_id="183779";
+```
+<img width="371" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/b1b7c291-de5a-415b-a28a-6dd1c26b3c12">
+
+```sql
+Select *
 From get_fit_now_check_in
 Where check_in_date = '20180119' ;           
 ```
