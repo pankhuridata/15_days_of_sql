@@ -50,6 +50,11 @@ Where person_id='14887';
 <img width="459" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/968ed8aa-2b8d-48c1-9d02-705077548795">
 
 ```sql
+Select *
+From interview
+Where person_id='16371';
+```
+<img width="467" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/4e111286-3d56-44b8-bb0e-032ded9de053">
 
 
 
