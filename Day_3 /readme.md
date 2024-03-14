@@ -84,5 +84,9 @@ Where check_in_date = '20180109' and membership_id like '48Z%' ;
 ```
 <img width="286" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/c73a252e-cba3-4fed-a733-5b995e9d9090">
 
+```sql
+
+```
+<img width="245" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/e65007a2-bd42-4cc3-a372-b74d522ddbb4">
 
  
