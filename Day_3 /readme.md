@@ -65,9 +65,15 @@ Where id like '48Z%'and membership_status='gold';
 
 ```sql
 Select *
+From drivers_license
+Where plate_number like 'H42W%' ;
+```
+<img width="376" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/b70cd728-d924-4f36-b4aa-d0032419139c">
+
+```sql
+Select *
 From get_fit_now_check_in
-Where check_in_date = '20180119' ;
-           
+Where check_in_date = '20180119' ;           
 ```
 <img width="281" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/e8e786e3-cead-42d4-96c3-30af34b5c8df">
 
