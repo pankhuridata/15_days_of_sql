@@ -19,16 +19,17 @@ There's been a Murder in SQL City! A crime has taken place and the detective nee
   ```
   
 <img width="436" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/3414fa69-5235-43d0-be6c-676a7b218126">
+
  - As we can see there is only one murder reported on 2018/01/15 in SQL City with description about 2 witnesses. One lives at last house on **Northwestern Dr** and other lives somewhere on **Franklin Ave** named **Annabel**.
 
 - We got the 1st witness address:
-  ```sql
-  Select *
-  From person
-  Where address_street_name = "Northwestern Dr"
-  Order By address_number Desc
-  Limit 1;
-  ```
+```sql
+Select *
+From person
+Where address_street_name = "Northwestern Dr"
+Order By address_number Desc
+Limit 1;
+```
   <img width="376" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/55bef5e1-a325-471d-9fbb-5f638a232cc5">
 
 
