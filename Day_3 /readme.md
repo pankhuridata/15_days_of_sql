@@ -108,7 +108,10 @@ Where person_id='67318';
 ```sql
 Select *
 From drivers_license
-Where car_make='Tesla'and car_model='Model S'and gender='female'; 
+Where car_make='Tesla'and car_model='Model S'and gender='female' and hair_color = "red"; 
 ```
-<img width="388" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/d5ba7475-fbfb-491d-96e7-b218ea60cea5">
+<img width="400" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/415eceb8-f61a-4b1b-ba43-9d065cd98019">
+
+
+```sql
 
