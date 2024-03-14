@@ -41,6 +41,15 @@ Where name like "Annabel%" and address_street_name = "Franklin Ave";
 ```
 <img width="382" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/89279a88-cf5e-47d0-a47c-45a9eb612737">
 
+- Now, let us get their interview transcripts
+```sql
+Select *
+From interview
+Where person_id='14887';
+```
+<img width="459" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/968ed8aa-2b8d-48c1-9d02-705077548795">
+
+```sql
 
 
 
