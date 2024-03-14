@@ -56,6 +56,15 @@ Where person_id='16371';
 ```
 <img width="467" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/4e111286-3d56-44b8-bb0e-032ded9de053">
 
+```sql
+Select *
+From get_fit_now_member
+Where id like '48Z%'and membership_status='gold';
+```
+<img width="356" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/1719a343-4f48-498c-8046-27e77822ae9d">
 
+```sql
+
+```
 
  
