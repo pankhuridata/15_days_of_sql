@@ -105,3 +105,10 @@ Where person_id='67318';
 ```
 <img width="436" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/62d0d02c-60d4-4c48-bf75-b7a4a83c04e7">
 
+```sql
+Select *
+From drivers_license
+Where car_make='Tesla'and car_model='Model S'and gender='female'; 
+```
+<img width="388" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/d5ba7475-fbfb-491d-96e7-b218ea60cea5">
+
