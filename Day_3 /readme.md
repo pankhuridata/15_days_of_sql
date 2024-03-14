@@ -97,3 +97,11 @@ INSERT INTO solution VALUES (1, 'Jeremy Bowers');
         SELECT value FROM solution;
 ``` 
 <img width="434" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/6b70d6c2-5d6f-4bec-8686-59d4174d26bd">
+
+```sql
+Select *
+From interview
+Where person_id='67318';
+```
+<img width="436" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/62d0d02c-60d4-4c48-bf75-b7a4a83c04e7">
+
