@@ -12,10 +12,35 @@ There's been a Murder in SQL City! A crime has taken place and the detective nee
 
 - We know that the murder took place in SQL City on Jan 15, 2018. So let us find the description of the crime.
 
-  ```
+  ```sql
   Select *
   From crime_scene_report
   Where type='murder' and city='SQL City' ;
   ```
   
 <img width="436" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/3414fa69-5235-43d0-be6c-676a7b218126">
+ - As we can see there is only one murder reported on 2018/01/15 in SQL City with description about 2 witnesses. One lives at last house on **Northwestern Dr** and other lives somewhere on **Franklin Ave** named **Annabel**.
+
+- We got the 1st witness address:
+  ```sql
+  Select *
+  From person
+  Where address_street_name = "Northwestern Dr"
+  Order By address_number Desc
+  Limit 1;
+  ```
+  <img width="376" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/55bef5e1-a325-471d-9fbb-5f638a232cc5">
+
+
+- We got Annabel's details:
+```sql
+Select *
+From person
+Where name like "Annabel%" and address_street_name = "Franklin Ave";
+```
+<img width="382" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/89279a88-cf5e-47d0-a47c-45a9eb612737">
+
+
+
+
+ 
