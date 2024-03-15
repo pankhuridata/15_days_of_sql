@@ -39,5 +39,6 @@
  - Finally, a FULL OUTER JOIN simply means that rows from both tables are kept, regardless of whether a matching row exists in the other table. This join type is not supported by SQLite. </br> </br>
 <img width="113" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/bda67458-0ecf-4767-928f-dcfa2335a3bc">
 
+**A little tip: Be careful with FULL OUTER JOIN as it can introduce duplicate rows to your results without you realizing!**
 
 
