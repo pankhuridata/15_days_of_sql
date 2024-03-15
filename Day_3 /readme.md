@@ -105,23 +105,30 @@ Where person_id='67318';
 ```
 <img width="436" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/62d0d02c-60d4-4c48-bf75-b7a4a83c04e7">
 
+
 ```sql
-SELECT d.id, p.name, p.ssn
+ELECT p.name, d.height, d.hair_color,d.car_make,d.car_model,d.gender
 FROM drivers_license as d
 Join person as p ON
-p.license_id=d.id
+d.id=p.license_id
 Where d.car_make='Tesla'
 and d.car_model='Model S'
 and d.gender='female' 
-and d.hair_color = "red";
-
+and d.hair_color = "red"
+And p.id in (Select f.person_id
+			 From facebook_event_checkin as f
+			 Where f.event_name = "SQL Symphony Concert")
 ```
-<img width="198" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/82ae0072-78af-4249-8df9-b5dd5caa145d">
+<img width="281" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/db473c87-7b70-4290-a0d0-0652079f766e">
 
 ```sql
-
+INSERT INTO solution VALUES (1, 'Miranda Priestly');
+        
+        SELECT value FROM solution;
 ```
-<img width="377" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/fe293e6c-4f8a-4994-96f6-c1882219e2dd">
+<img width="434" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/2006ad3c-a2bf-49de-9578-615401e6f850">
+
+
 
 
 
