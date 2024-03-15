@@ -1,2 +1,3 @@
-# Joins 
+# Day 3
+## Joins 
 
