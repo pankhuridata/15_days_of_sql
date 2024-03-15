@@ -13,6 +13,9 @@
            LIMIT num_limit OFFSET num_offset;*  <br/>
 
 - The INNER JOIN is a process that matches rows from the first table and the second table which have the same key (as defined by the ON constraint) to create a result row with the combined columns from both tables.
+  
+<img width="209" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/b066ff13-ae65-4d9d-bde3-c91870eccfd5">
+
 - There are many queries where the INNER JOIN is written simply as a JOIN. These two are equivalent.
 
 ## LEFT JOIN, RIGHT JOIN and FULL JOIN
