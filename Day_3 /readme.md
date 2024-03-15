@@ -4,13 +4,10 @@
 
 ### INNER JOIN
 - The first of the joins that we will introduce is the INNER JOIN.
-- Syntax: *SELECT column, another_table_column, … </br>
-           FROM mytable </br>
-           INNER JOIN another_table </br>
-           ON mytable.id = another_table.id </br>
-           WHERE condition(s) </br>
-           ORDER BY column, … ASC/DESC </br>
-           LIMIT num_limit OFFSET num_offset;*  <br/>
+- Syntax: *SELECT *<br/>
+          FROM TableA<br/>
+          INNER JOIN TableB<br/>
+          ON TableA.name = TableB.name <br/> *
 
 - The INNER JOIN is a process that matches rows from the first table and the second table which have the same key (as defined by the ON constraint) to create a result row with the combined columns from both tables.
   
