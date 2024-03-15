@@ -106,16 +106,20 @@ Where person_id='67318';
 <img width="436" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/62d0d02c-60d4-4c48-bf75-b7a4a83c04e7">
 
 ```sql
-Select *
-From drivers_license
-Where car_make='Tesla'and car_model='Model S'and gender='female' and hair_color = "red"; 
+SELECT d.id, p.name, p.ssn
+FROM drivers_license as d
+Join person as p ON
+p.license_id=d.id
+Where d.car_make='Tesla'
+and d.car_model='Model S'
+and d.gender='female' 
+and d.hair_color = "red";
+
 ```
-<img width="400" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/415eceb8-f61a-4b1b-ba43-9d065cd98019">
+<img width="198" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/82ae0072-78af-4249-8df9-b5dd5caa145d">
 
 ```sql
-SELECT *
-FROM person
-WHERE license_id = "202298" OR license_id = "291182" OR license_id = "918773";
+
 ```
 <img width="377" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/fe293e6c-4f8a-4994-96f6-c1882219e2dd">
 
