@@ -32,6 +32,7 @@
 </br>
 -  The RIGHT JOIN is the same, but reversed, keeping rows in B regardless of whether a match is found in A.</br>
 <img width="109" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/724c5357-67f6-4fe3-b749-3f502f18051e">
+
 </br>
 -  Finally, a FULL OUTER JOIN simply means that rows from both tables are kept, regardless of whether a matching row exists in the other table. This join type is not supported by SQLite. </br>
 <img width="113" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/bda67458-0ecf-4767-928f-dcfa2335a3bc">
