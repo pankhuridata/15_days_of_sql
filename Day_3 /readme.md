@@ -16,7 +16,7 @@
 - There are many queries where the INNER JOIN is written simply as a JOIN. These two are equivalent.
 
 ## LEFT JOIN, RIGHT JOIN and FULL JOIN
-If the two tables have asymmetric data, which can easily happen when data is entered in different stages, then we would have to use a ** LEFT JOIN, RIGHT JOIN or FULL JOIN ** instead to ensure that the data you need is not left out of the results.
+- If the two tables have asymmetric data, which can easily happen when data is entered in different stages, then we would have to use a ** LEFT JOIN, RIGHT JOIN or FULL JOIN ** instead to ensure that the data you need is not left out of the results.
 
 - Syntax: *SELECT column, another_column, …</br>
 FROM mytable </br>
