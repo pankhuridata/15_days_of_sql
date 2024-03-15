@@ -42,3 +42,6 @@
 **A little tip: Be careful with FULL OUTER JOIN as it can introduce duplicate rows to your results without you realizing!**
 
 
+
+
+
