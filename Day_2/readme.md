@@ -1,3 +1,4 @@
+# Day 2
 ## Queries with constraints 
 - When writing WHERE clauses with columns containing text data, SQL supports a number of useful operators to do things like case-insensitive string comparison and wildcard pattern matching.
 
