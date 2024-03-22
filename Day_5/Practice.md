@@ -59,3 +59,14 @@ Where Role = 'Artist';
 | Role   | Number |
 |--------|--------|
 | Artist | 5      |
+
+### Find the total number of years employed by all Engineers 
+``` sql
+SELECT role, SUM(years_employed)
+FROM employees
+GROUP BY role
+HAVING role = "Engineer";
+```
+| Role     | SUM(Years_employed) |
+|----------|---------------------|
+| Engineer | 17                  |
