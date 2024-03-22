@@ -41,7 +41,11 @@
 
 **A little tip: Be careful with FULL OUTER JOIN as it can introduce duplicate rows to your results without you realizing!**
 
+### Summary Cheatseat 
+*Credits: Atlassian.com*
+<img width="392" alt="image" src="https://github.com/pankhuridata/15_days_of_sql/assets/109762146/966b3a0b-ffc2-4d2c-8a43-0e2fdadb7b86">
 
+  
 
 
 
