@@ -7,7 +7,7 @@ FROM mytable
 WHERE constraint_expression;*
 
 - Here are some common aggregate functions
-| Function                | Description                                                                                                                                                                                     |
+| Function                | Description       |
 |-------------------------|-------------------|
 | COUNT(*), COUNT(column) | A common function used to counts the number of rows in the group if no column name is specified. Otherwise, count the number of rows in the group with non-NULL values in the specified column. |
 | MIN(column)             | Finds the smallest numerical value in the specified column for all rows in the group.|
