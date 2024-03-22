@@ -44,9 +44,16 @@ LEFT JOIN users ON
 trades.user_id = users.user_id 
 WHERE status = 'Completed'
 ```
+| order_id | user_id | quantity | status    | date                | price | user_id | city          | email                | signup_date         |
+|----------|---------|----------|-----------|---------------------|-------|---------|---------------|----------------------|---------------------|
+| 100102   | 111     | 10       | Completed | 08/17/2022 12:00:00 | 10.00 | 111     | San Francisco | rrok10@gmail.com     | 08/03/2021 12:00:00 |
+| 100900   | 148     | 50       | Completed | 07/14/2022 12:00:00 | 9.78  | 148     | Boston        | sailor9820@gmail.com | 08/20/2021 12:00:00 |
+| 100259   | 148     | 35       | Completed | 08/25/2022 12:00:00 | 5.10  | 148     | Boston        | sailor9820@gmail.com | 08/20/2021 12:00:00 |
+| 100264   | 148     | 40       | Completed | 08/26/2022 12:00:00 | 4.80  | 148     | Boston        | sailor9820@gmail.com | 08/20/2021 12:00:00 |
+
+<br/>
 
 ## Finally, we need to find top 3 cities that have highest number of completed orders
-
 ```sql
 SELECT city, COUNT(status) as total_orders 
 FROM trades 
