@@ -14,6 +14,7 @@ Here are some common aggregate functions:
 -  AVG(column) - Finds the average numerical value in the specified column for all rows in the group.
 -  SUM(column) - Finds the sum of all numerical values in the specified column for the rows in the group.
 <br/>
+
 ### Grouped aggregate functions
 - In addition to aggregating across all the rows, you can instead apply the aggregate functions to individual groups of data within that group. This would then create as many results as there are unique groups defined as by the GROUP BY clause.
 
