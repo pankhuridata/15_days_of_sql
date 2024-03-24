@@ -84,7 +84,7 @@ job_listings Table:
 | description | string  |
 
 Answer: 
-##  First, identify companies with duplicate job listings
+##  First, group the job listings
 ```sql
 SELECT company_id, title, description, Count(*)
 FROM job_listings
@@ -98,3 +98,17 @@ Having Count(*)>1;
 | 345        | Data Analyst      | Data analyst reviews data to identify key insights into a business's customers and ways the data can be used to solve problems. | 2     |
 
 ## Then, Filter for companies with duplicate job listings
+- For this let us use the help of sub-query to do so
+```sql
+SELECT COUNT(*) AS duplicate_jobs
+FROM (
+    SELECT company_id, title, description
+    FROM job_listings
+    GROUP BY company_id, title, description
+    HAVING COUNT(*) > 1
+) AS dup;
+
+```
+| duplicate_jobs | 
+|----------------|
+| 3              | 
