@@ -112,3 +112,56 @@ FROM (
 | duplicate_jobs | 
 |----------------|
 | 3              | 
+
+# Question 3 
+Your team at JPMorgan Chase is preparing to launch a new credit card, and to gain some insights, you're analyzing how many credit cards were issued each month.
+
+Write a query that outputs the name of each credit card and the difference in the number of issued cards between the month with the highest issuance cards and the lowest issuance. Arrange the results based on the largest disparity.
+
+monthly_cards_issued Table:
+| Column Name   | Type    |
+|---------------|---------|
+| issue_month   | integer |
+| issue_year    | integer |
+| card_name     | string  |
+| issued_amount | integer |
+
+Answer:
+``` sql
+SELECT card_name, MAX(issued_amount)-Min(issued_amount) as difference
+FROM monthly_cards_issued
+GROUP BY card_name
+```
+| card_name              | difference |
+|------------------------|------------|
+| Chase Sapphire Reserve | 30000      |
+| Chase Freedom Flex     | 15000      |
+ORDER BY difference DESC;
+
+| card_name              | difference |
+|------------------------|------------|
+| Chase Sapphire Reserve | 30000      |
+| Chase Freedom Flex     | 15000      |
+
+# Question 4 
+Assume you have an events table on Facebook app analytics. Write a query to calculate the click-through rate (CTR) for the app in 2022 and round the results to 2 decimal places.
+Definition and note:
+- Percentage of click-through rate (CTR) = 100.0 * Number of clicks / Number of impressions.
+- To avoid integer division, multiply the CTR by 100.0, not 100.
+
+events Table:
+| Column Name | Type     |
+|-------------|----------|
+| app_id      | integer  |
+| event_type  | string   |
+| timestamp   | datetime |
+
+Answer:
+```sql
+SELECT 
+  app_id, 
+  ROUND(100.0*SUM(CASE WHEN event_type = 'click' then 1 ELSE 0 END)/SUM(CASE WHEN event_type = 'impression' then 1 ELSE 0 END), 2) AS ctr
+FROM events
+WHERE timestamp BETWEEN '2022-01-01' AND '2022-12-31'
+GROUP BY app_id;
+```
