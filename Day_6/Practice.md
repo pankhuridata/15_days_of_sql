@@ -1,4 +1,5 @@
-Question: A Data Scientist interviewing at Robinhood was asked this SQL interview question where you need to write a SQL JOIN query to **find the top three cities that have the highest number of completed trade orders.**
+# Question 1 
+A Data Scientist interviewing at Robinhood was asked this SQL interview question where you need to write a SQL JOIN query to **find the top three cities that have the highest number of completed trade orders.**
 
 trades Table:
 | Column Name | Type                             |
@@ -70,3 +71,30 @@ Limit 3;
 | Boston        | 3            |
 | Denver        | 2            |
 
+# Question 2 
+Assume you're given a table containing job postings from various companies on the LinkedIn platform. Write a query to retrieve the count of companies that have posted duplicate job listings. <br/>
+Definition: Duplicate job listings are defined as two job listings within the same company that share identical titles and descriptions.
+
+job_listings Table:
+| Column Name | Type    |
+|-------------|---------|
+| job_id      | integer |
+| company_id  | integer |
+| title       | string  |
+| description | string  |
+
+Answer: 
+##  First, identify companies with duplicate job listings
+```sql
+SELECT company_id, title, description, Count(*)
+FROM job_listings
+Group By company_id, title, description
+Having Count(*)>1;
+```
+| company_id | title             | description                                                                                                                     | count |
+|------------|-------------------|---------------------------------------------------------------------------------------------------------------------------------|-------|
+| 827        | Data Scientist    | Data scientist uses data to understand and explain the phenomena around them, and help organizations make better decisions.     | 2     |
+| 244        | Software Engineer | Software engineers design and create computer systems and applications to solve real-world problems.                            | 2     |
+| 345        | Data Analyst      | Data analyst reviews data to identify key insights into a business's customers and ways the data can be used to solve problems. | 2     |
+
+## Then, Filter for companies with duplicate job listings
