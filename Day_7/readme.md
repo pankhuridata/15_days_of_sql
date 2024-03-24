@@ -1,7 +1,7 @@
 # Order of execution of a Query
 Each query begins with finding the data that we need in a database, and then filtering that data down into something that can be processed and understood as quickly as possible. Because each part of the query is executed sequentially, it's important to understand the order of execution so that you know what results are accessible where.
 
-# Query order of execution
+## Query order of execution
 1. FROM and JOINs
 The FROM clause, and subsequent JOINs are first executed to determine the total working set of data that is being queried. This includes subqueries in this clause, and can cause temporary tables to be created under the hood containing all the columns and rows of the tables being joined.
 
@@ -26,3 +26,16 @@ If an order is specified by the ORDER BY clause, the rows are then sorted by the
 8. LIMIT / OFFSET
 Finally, the rows that fall outside the range specified by the LIMIT and OFFSET are discarded, leaving the final set of rows to be returned from the query.
 
+*Not every query needs to have all the parts we listed above, but a part of why SQL is so flexible is that it allows developers and data analysts to quickly manipulate data without having to write additional code, all just by using the above clauses.*
+
+## Complete SELECT query
+Syntax: <br/>
+*SELECT DISTINCT column, AGG_FUNC(column_or_expression), … <br/>
+FROM mytable <br/>
+    JOIN another_table <br/>
+      ON mytable.column = another_table.column <br/>
+    WHERE constraint_expression <br/>
+    GROUP BY column <br/>
+    HAVING constraint_expression <br/>
+    ORDER BY column ASC/DESC <br/>
+    LIMIT count OFFSET COUNT;* 
