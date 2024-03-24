@@ -164,3 +164,63 @@ GROUP BY app_id;
 |--------|-------|
 | 123    | 66.67 |
 | 234    | 33.33 |
+
+# Question 5: Highest-Grossing Items
+Assume you're given a table containing data on Amazon customers and their spending on products in different category, write a query to identify the top two highest-grossing products within each category in the year 2022. The output should include the category, product, and total spend.
+
+product_spend Table:
+| Column Name      | Type      |
+|------------------|-----------|
+| category         | string    |
+| product          | string    |
+| user_id          | integer   |
+| spend            | decimal   |
+| transaction_date | timestamp |
+
+Answer:
+## First ranking the products in each category
+```sql
+SELECT category,product,spend,
+        RANK() OVER (PARTITION BY category ORDER BY spend DESC) AS product_rank
+FROM product_spend
+WHERE EXTRACT(YEAR FROM transaction_date) = 2022
+```
+| category    | product              | spend  | product_rank |
+|-------------|----------------------|--------|--------------|
+| appliance   | refrigerator         | 299.99 | 1            |
+| appliance   | washing machine      | 220.00 | 2            |
+| appliance   | washing machine      | 219.80 | 3            |
+| appliance   | microwave            | 49.99  | 4            |
+| electronics | wireless headset     | 249.90 | 1            |
+| electronics | wireless headset     | 198.00 | 2            |
+| electronics | vacuum               | 189.00 | 3            |
+| electronics | vacuum               | 152.00 | 4            |
+| electronics | vacuum               | 145.66 | 5            |
+| electronics | computer mouse       | 45.00  | 6            |
+| electronics | wireless headset     | 19.99  | 7            |
+| electronics | 3.5mm headphone jack | 7.99   | 8            |
+
+## Next, let
+
+```sql
+WITH ranked_products AS (
+    SELECT 
+        category,
+        product,
+        spend,
+        RANK() OVER (PARTITION BY category ORDER BY spend DESC) AS product_rank
+    FROM 
+        product_spend
+    WHERE 
+        EXTRACT(YEAR FROM transaction_date) = 2022
+)
+SELECT 
+    category,
+    product,
+    spend
+FROM 
+    ranked_products
+WHERE 
+    product_rank <= 2;
+```
+
