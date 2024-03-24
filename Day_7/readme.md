@@ -26,7 +26,6 @@ If an order is specified by the **ORDER BY** clause, the rows are then sorted by
 8. LIMIT / OFFSET
 Finally, the rows that fall outside the range specified by the **LIMIT** and **OFFSET** are discarded, leaving the final set of rows to be returned from the query.
 
-*Not every query needs to have all the parts we listed above, but a part of why SQL is so flexible is that it allows developers and data analysts to quickly manipulate data without having to write additional code, all just by using the above clauses.*
 
 ## Complete SELECT query
 Syntax: <br/>
