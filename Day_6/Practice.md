@@ -1,4 +1,4 @@
-# Question 1 
+# Question 1: Cities with Completed Trades
 A Data Scientist interviewing at Robinhood was asked this SQL interview question where you need to write a SQL JOIN query to **find the top three cities that have the highest number of completed trade orders.**
 
 trades Table:
@@ -71,7 +71,7 @@ Limit 3;
 | Boston        | 3            |
 | Denver        | 2            |
 
-# Question 2 
+# Question 2: Duplicate Job Listings 
 Assume you're given a table containing job postings from various companies on the LinkedIn platform. Write a query to retrieve the count of companies that have posted duplicate job listings. <br/>
 Definition: Duplicate job listings are defined as two job listings within the same company that share identical titles and descriptions.
 
@@ -113,7 +113,7 @@ FROM (
 |----------------|
 | 3              | 
 
-# Question 3 
+# Question 3: Cards Issued Difference 
 Your team at JPMorgan Chase is preparing to launch a new credit card, and to gain some insights, you're analyzing how many credit cards were issued each month.
 
 Write a query that outputs the name of each credit card and the difference in the number of issued cards between the month with the highest issuance cards and the lowest issuance. Arrange the results based on the largest disparity.
@@ -138,7 +138,7 @@ ORDER BY difference DESC;
 | Chase Sapphire Reserve | 30000      |
 | Chase Freedom Flex     | 15000      |
 
-# Question 4 
+# Question 4: App Click-through Rate 
 Assume you have an events table on Facebook app analytics. Write a query to calculate the click-through rate (CTR) for the app in 2022 and round the results to 2 decimal places.
 Definition and note:
 - Percentage of click-through rate (CTR) = 100.0 * Number of clicks / Number of impressions.
