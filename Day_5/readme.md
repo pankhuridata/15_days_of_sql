@@ -2,9 +2,9 @@
 
 SQL also supports the use of aggregate expressions (or functions) that allow you to summarize information about a group of rows of data.
 - Select query with aggregate functions over all rows
-Syntax: *SELECT AGG_FUNC(column_or_expression) AS aggregate_description, …
-FROM mytable
-WHERE constraint_expression;*
+Syntax: *SELECT AGG_FUNC(column_or_expression) AS aggregate_description, … <br/>
+FROM mytable <br/>
+WHERE constraint_expression;* 
 <br/>
 Here are some common aggregate functions:
 
@@ -31,10 +31,10 @@ GROUP BY column;*
 
 Luckily, SQL allows us to do this by adding an additional HAVING clause which is used specifically with the GROUP BY clause to allow us to filter grouped rows from the result set.
 <br/>
-Syntax: *SELECT group_by_column, AGG_FUNC(column_expression) AS aggregate_result_alias, …
-FROM mytable
-WHERE condition
-GROUP BY column
+Syntax: *SELECT group_by_column, AGG_FUNC(column_expression) AS aggregate_result_alias, … <br/>
+FROM mytable <br/>
+WHERE condition <br/>
+GROUP BY column <br/>
 HAVING group_condition;*
 
 - If you aren't using the `GROUP BY` clause, a simple `WHERE` clause will suffice.
