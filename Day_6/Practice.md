@@ -200,7 +200,7 @@ WHERE EXTRACT(YEAR FROM transaction_date) = 2022
 | electronics | wireless headset     | 19.99  | 7            |
 | electronics | 3.5mm headphone jack | 7.99   | 8            |
 
-## Next, let
+## Next, let 
 
 ```sql
 WITH ranked_products AS (
