@@ -131,13 +131,8 @@ Answer:
 SELECT card_name, MAX(issued_amount)-Min(issued_amount) as difference
 FROM monthly_cards_issued
 GROUP BY card_name
-```
-| card_name              | difference |
-|------------------------|------------|
-| Chase Sapphire Reserve | 30000      |
-| Chase Freedom Flex     | 15000      |
 ORDER BY difference DESC;
-
+```
 | card_name              | difference |
 |------------------------|------------|
 | Chase Sapphire Reserve | 30000      |
@@ -165,3 +160,7 @@ FROM events
 WHERE timestamp BETWEEN '2022-01-01' AND '2022-12-31'
 GROUP BY app_id;
 ```
+| app_id | ctr   |
+|--------|-------|
+| 123    | 66.67 |
+| 234    | 33.33 |
