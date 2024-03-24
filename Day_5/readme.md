@@ -1,7 +1,7 @@
 ## Queries with aggregates
 
 SQL also supports the use of aggregate expressions (or functions) that allow you to summarize information about a group of rows of data.
-- Select query with aggregate functions over all rows
+- Select query with aggregate functions over all rows <br/>
 Syntax: *SELECT AGG_FUNC(column_or_expression) AS aggregate_description, … <br/>
 FROM mytable <br/>
 WHERE constraint_expression;* 
