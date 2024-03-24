@@ -200,7 +200,7 @@ WHERE EXTRACT(YEAR FROM transaction_date) = 2022
 | electronics | wireless headset     | 19.99  | 7            |
 | electronics | 3.5mm headphone jack | 7.99   | 8            |
 
-## Next, let 
+## Next, let us identify the top two highest-grossing products within each category 
 
 ```sql
 WITH ranked_products AS (
@@ -223,4 +223,9 @@ FROM
 WHERE 
     product_rank <= 2;
 ```
-
+| category    | product          | spend  |
+|-------------|------------------|--------|
+| appliance   | refrigerator     | 299.99 |
+| appliance   | washing machine  | 220.00 |
+| electronics | wireless headset | 249.90 |
+| electronics | wireless headset | 198.00 |
