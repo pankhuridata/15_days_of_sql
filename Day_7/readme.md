@@ -38,6 +38,8 @@ WHERE CASE <br/>
 | Chris Hemsworth    | Thor             | Thor            | YouTube   | 400000    | 100   | 9.10            | 20000     | 1200         |
 | Mark Ruffalo       | Bruce Banner     | Hulk            | Twitter   | 200000    | 80    | 5.30            | 6000      | 400          |
 
+- Handling Multiple Conditions with CASE Statement in SELECT Statement <br/>
+We can create groups using multiple conditions in the CASE statement.
 ``` sql
 SELECT 
   actor, 
@@ -58,6 +60,8 @@ WHERE platform IN ('TikTok', 'Instagram');
 | Tom Hiddleston     | Loki             | High Engagement     |
 | Zoe Saldana        | Gamora           | Low Engagement      |
 
+- Using CASE-ELSE Clause with CASE Statement in SELECT Statement <br/>
+When none of the previous conditions match, we can use the ELSE clause to provide a default value.
 ``` sql
 SELECT
   character,
@@ -78,7 +82,8 @@ FROM marvel_avengers;
 | Thor             | Thor            | YouTube   | Moderately Popular  |
 | Bruce Banner     | Hulk            | Twitter   | Less Popular        |
 
-
+- Counting Results using SQL COUNT() in CASE Statement <br/>
+The COUNT() aggregate function within a CASE statement is used to count occurrences based on various conditions within the dataset.
 ```sql
 SELECT
   platform,
