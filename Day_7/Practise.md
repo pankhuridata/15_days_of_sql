@@ -33,12 +33,14 @@ The transitions between payment statuses in the provided table can be summarized
 - Rows 1, 3, 5, and 7: If an advertiser makes a payment on day T, the status is updated to either "EXISTING" or "RESURRECT" based on their previous status. If the previous status was "CHURN," the updated status is "RESURRECT." For any other previous status, the updated status is "EXISTING."
 <br/>
 **advertiser** Table:
+  
 | Column Name | Type   |
 |-------------|--------|
 | user_id     | string |
 | status      | string |
 
 **advertiser** Example Input:
+
 | user_id | status   |
 |---------|----------|
 | bing    | NEW      |
@@ -46,12 +48,14 @@ The transitions between payment statuses in the provided table can be summarized
 | alibaba | EXISTING |
 
 **daily_pay** Table:
+
 | Column Name | Type    |
 |-------------|---------|
 | user_id     | string  |
 | paid        | decimal |
 
 **daily_pay** Example Input:
+
 | user_id | paid   |
 |---------|--------|
 | yahoo   | 45.00  |
@@ -59,6 +63,7 @@ The transitions between payment statuses in the provided table can be summarized
 | target  | 13.00  |
 
 **Example Output**:
+
 | user_id | new_status |
 |---------|------------|
 | bing    | CHURN      |
