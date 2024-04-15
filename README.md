@@ -29,9 +29,9 @@ I wanted to put a spin on this and condense this into 15 days instead. This forc
 - Order of execution of a Query
   
 # Day 7 and Day 8
-- Subqueries
 - CASE statements
--  UNION & UNION ALL
+- UNION & UNION ALL
+- Date Functions
   
 # Day 9
 -  Joining 3 or more tables
@@ -42,6 +42,7 @@ I wanted to put a spin on this and condense this into 15 days instead. This forc
   
 # Day 11
 - Common Table Expressions (CTE)
+- Subqueries
 
 # Day 12
 - Funnel Analysis
