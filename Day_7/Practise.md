@@ -1,5 +1,7 @@
 # Question 1
-You're provided with two tables: the **advertiser table** contains information about advertisers and their respective payment status, and the **daily_pay table** contains the current payment information for advertisers, and it only includes advertisers who have made payments.
+You're provided with two tables:<br/>
+the **advertiser table** contains information about advertisers and their respective payment status, 
+<br/> and the **daily_pay table** contains the current payment information for advertisers, and it only includes advertisers who have made payments.
 <br/>
 Write a query to **update the payment status of Facebook advertisers based on the information in the daily_pay table**. The output should include the user ID and their current payment status, sorted by the user id.
 
@@ -10,6 +12,7 @@ The payment status of advertisers can be classified into the following categorie
 - Resurrect: Advertisers who have not made a recent payment but may have made a previous payment and have made a payment again recently.
 <br/>
 Before proceeding with the question, it is important to understand the possible transitions in the advertiser's status based on the payment status. The following table provides a summary of these transitions:
+
 | # | Current Status | Updated Status | Payment on Day T |
 |---|----------------|----------------|------------------|
 | 1 | NEW            | EXISTING       | Paid             |
