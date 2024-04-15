@@ -70,4 +70,32 @@ The transitions between payment statuses in the provided table can be summarized
 | yahoo   | EXISTING   |
 | alibaba | EXISTING   |
 
+## Answer
+```sql
+SELECT 
+  user_id,
+  CASE
+    WHEN status IS NULL AND paid > 0 THEN 'NEW'
+    WHEN status = 'CHURN' AND paid > 0 THEN 'RESURRECT'
+    WHEN paid > 0 THEN 'EXISTING'
+    WHEN paid IS NULL THEN 'CHURN'
+  END AS new_status
+FROM 
+  advertiser
+FULL JOIN
+  daily_pay
+  USING(user_id)
+ORDER BY user_id;
+```
+| user_id | new_status |
+|---------|------------|
+| alibaba | EXISTING   |
+| baidu   | CHURN      |
+| bing    | CHURN      |
+| chase   | CHURN      |
+| fitdata | NEW        |
+| morgan  | EXISTING   |
+| target  | RESURRECT  |
+| tesla   | CHURN      |
+| yahoo   | EXISTING   |
 
